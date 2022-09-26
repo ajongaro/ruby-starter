@@ -4,15 +4,22 @@ This template has a basic Gemfile with three dependencies already installed and 
 - Rubocop, a static code analyzer
 - RSpec, a robust testing framework
 - SimpleCov, a testing coverage analyzer
+- Pry-byebug, a debugger
 
 
 ## Instructions
-When creating a new Github repo, select this ruby_project repo in the template dropdown menu, and then clone your project locally as usual.
+1. When creating a new Github repo, select this ruby_project repo in the template dropdown menu, and then clone your project locally as usual.
+2. Run `bundle install` in the directory to install the gems in `Gemfile`
+3. Add the below code to the top of `spec_helper.rb` if it isn't there already
+```
+require 'simplecov'
+SimpleCov.start
+```
+4. `atom .` will open the working directory tree in Atom
 
-This should save a decent amount of time when starting new basic ruby projects.
 
 ## Notes
-- SimpleCov has already been added to the spec_helper.rb file so you won't have to do anything to get it started, and will run automatically whenever you run rspec.
+- SimpleCov has already been added to the existing spec_helper.rb file, but double check it after running `bundle install`
 - Please add suggestions on how to improve this starter repo by adding issues or comments.
 
 Happy coding!
