@@ -15,11 +15,10 @@ This template has a basic Gemfile with three dependencies already installed and 
 require 'simplecov'
 SimpleCov.start
 ```
-4. `atom .` will open the working directory tree in Atom
-
 
 ## Notes
 - SimpleCov has already been added to the existing spec_helper.rb file, but double check it after running `bundle install`
+- Add any additional gems you'd like into the Gemfile before running `bundle install`
 - Please add suggestions on how to improve this starter repo by adding issues or comments.
 
 Happy coding!
